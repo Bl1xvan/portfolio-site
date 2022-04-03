@@ -2,6 +2,15 @@ body{
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
+:root{
+    --lightergreen: hsl(150, 90%, 75%);
+    --lightgreen: hsl(150, 80%, 50%);
+    --darkgreen: hsl(150, 80%, 20%);
+    --darkergreen: hsl(150, 30%, 10%);
+    --darklink: black;
+}
   
   #navbar{
     position: fixed;
@@ -16,8 +25,8 @@ body{
   
   .navlistitem > a{
       display: block;
-      padding: 15px;
       text-align: center;
+      padding: 20px;
   }
   
   .navlistitem{
@@ -26,15 +35,17 @@ body{
     list-style-type: none;
   }
   
-  .navlistitem > a{
+  .navlistitem > a, .social > a{
+    color: var(--darklink);
     text-decoration: none;
-    color: black;
-    padding: 20px;
+  }
+
+  .social{
+      padding: 20px;
   }
   
   .navlistitem > a:hover{
     background-color: hsla(20, 90%, 50%, 0.3);
-    color: black;
   }
   
   #welcome-section{
@@ -43,7 +54,7 @@ body{
     justify-content: center;
     height: 100vh;
     color: white;
-    background-color: hsl(175, 50%, 5%);
+    background-color: var(--darkergreen);
   }
   
   #welcome-header{
@@ -51,7 +62,7 @@ body{
   }
   
   .header-letter{
-    background-color:hsl(175, 50%, 5%);;
+    background-color: var(--darkergreen);
     position: relative;
     padding: 20px;
     display: inline-block;
@@ -106,10 +117,11 @@ body{
   .section-header{
     text-align: center;
     padding: 20px;
+    font-size: 4vw;
   }
   
   .projects{
-    border: black solid 1px;
+    border: var(--darklink) solid 1px;
     margin: 15px;
   }
   
@@ -119,13 +131,22 @@ body{
   }
   
   #profile-sect{
-    background-color: hsl(90, 50%, 50%);
+    background-color: var(--lightergreen);
+  }
+
+  #portfolio-sect > .section-header{
+    color: var(--darkergreen);
   }
   
   .social{
     margin: 15px;
   }
   
+  #portfolio-toggle{
+    position: sticky;
+    color: white;
+    background-color: var(--lightgreen);
+  }
   
   @media screen and (min-width: 600px){
   
@@ -141,9 +162,9 @@ body{
       width: 95%;
       border-radius: 20px;
       justify-content: end;
-      background-color: hsl(150, 80%, 50%);
+      background-color: var(--lightgreen);
       border-style: inset;
-      border-color: hsl(150, 80%, 20%);
+      border-color: var(--darkgreen);
     }
     
   .navlistitem > a[href="#profile"]:hover{
@@ -156,12 +177,22 @@ body{
     }
     
     a[href="#portfolio"], a[href="#profile"]{
-    border-left: 2px solid black;
+    border-left: 2px solid var(--darklink);
   }
     
    .item-border{
-        border-right: 3px solid hsl(150, 80%, 20%);;
+        border-right: 3px solid var(--darkgreen);
       }
+
+    .social{
+        font-size: 2vw;
+    }
+
+    .project-tile{
+        font-size: 1.5vw;
+        display: block;
+        padding: 15px;
+    }
     
   }
   
@@ -171,16 +202,12 @@ body{
     grid-gap: 10px;
   }
     #navbarlist{
-      background-color: yellow;
+      background-color: var(--lightgreen);
     }
-    
-    .navlistitem > a {
-          background-image: linear-gradient(hsla(55, 100%, 80%), orange);
-      border: 2px groove maroon;
-    }
+
   
    a[href="#portfolio"]{
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
+      border-top: 1px solid var(--darklink);
+      border-bottom: 1px solid var(--darklink);
     }
   }
