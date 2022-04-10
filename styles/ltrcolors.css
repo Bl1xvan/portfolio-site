@@ -1,0 +1,47 @@
+  
+  .header-letter{
+    background-color: var(--darkergreen);
+    position: relative;
+    padding: 20px;
+    display: inline-block;
+    z-index: 2;
+  } 
+  
+  .light-span{
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .light-span-border{
+    z-index: 0;
+    display: block;
+    padding-right: 4px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .c{
+    border-left: 8px solid pink;
+    border-right: 8px solid blue;
+  }
+  
+  .o{
+    border-left: 8px solid yellow;
+    border-right: 8px solid lightgreen;
+    
+  }
+  
+  .m{
+    border-left: 8px solid yellow;
+    border-right: 8px solid lightblue;
+  }
+  
+  .e{
+    border-left: 8px solid yellow;
+    border-right: 8px solid pink;
+  }

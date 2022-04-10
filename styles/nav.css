@@ -1,0 +1,31 @@
+#navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+  }
+  
+  #navbarlist{
+      margin: 0;
+      padding: 0
+  }
+  
+  .navlistitem > a{
+      display: block;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .navlistitem{
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  
+  .navlistitem > a, .social > a{
+    color: var(--darklink);
+    text-decoration: none;
+  }
+
+  .navlistitem > a:hover{
+    background-color: hsla(20, 90%, 50%, 0.3);
+  }
