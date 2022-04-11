@@ -9,10 +9,10 @@ body{
 
 
 :root{
-    --lightergreen: hsl(150, 90%, 75%);
+    --lightergreen: #85f9bf;
     --lightgreen: hsl(150, 80%, 50%);
     --darkgreen: hsl(150, 80%, 20%);
-    --darkergreen: hsl(150, 30%, 10%);
+    --darkergreen: #171c1a;
     --darklink: black;
 }
   
@@ -23,7 +23,7 @@ body{
     justify-content: center;
     height: 100vh;
     color: white;
-    background-color: var(--darkergreen);
+    background-image: radial-gradient(circle,  black, black, var(--darkergreen));
     position: relative;
   }
   
@@ -69,9 +69,9 @@ body{
       width: 95%;
       border-radius: 20px;
       justify-content: end;
-      background-color: var(--lightgreen);
       border-style: inset;
       border-color: var(--darkgreen);
+      background-image: linear-gradient(var(--lightergreen), var(--lightgreen));
     }
     
   .navlistitem > a[href="#profile"]:hover{
@@ -102,11 +102,7 @@ body{
     display: grid;
     grid-gap: 10px;
   }
-    #navbarlist{
-      background-color: var(--lightgreen);
-    }
 
-  
    a[href="#portfolio"]{
       border-top: 1px solid var(--darklink);
       border-bottom: 1px solid var(--darklink);

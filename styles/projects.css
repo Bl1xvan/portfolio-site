@@ -1,7 +1,5 @@
-
-
 #portfolio-sect{
-    position: relative;
+  padding: 20px;
 }
 
 #portfolio-sect > .section-header{
@@ -10,18 +8,32 @@
 
 #projects{
     overflow-x: auto;
-    white-space: nowrap;
-    height: 30vw;
+    overflow-y: hidden;
+    display: flex;
+    padding: 40px;
 }
   
+#projects::-webkit-scrollbar {
+  height: 15px;
+}
+
+#projects::-webkit-scrollbar-track{
+  margin: 50px;
+  background-color: azure;
+}
+
+#projects::-webkit-scrollbar-thumb {
+  background-color: var(--lightergreen);
+  border-radius: 20px;
+}
+
 .projects{
     display: inline-block;
-    border: var(--darklink) solid 1px;
     margin: 15px;
     transform: scale(1);
     transition: transform 0.5s;
-    height: 250px;
-    width: auto;
+    text-align: center;
+    min-width: 300px;
   }
 
 .projects:hover{
@@ -29,9 +41,9 @@
 }
 
 .project-tile{
-    font-size: 1.5vw;
-    display: block;
-    padding: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px;
 }
 
 img{
