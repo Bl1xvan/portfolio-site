@@ -28,13 +28,30 @@
 }
 
 .projects{
-    display: block;
+    display: grid;
+    grid-template-rows: auto auto;
     margin: 15px;
-    text-align: center;
-    min-width: 300px;
-    min-height: 275px;
-    position: relative;
+    height: 50px;
+    width: 50px;
   }
+
+.project-link{
+  position: relative;
+  display: inline-block;
+}
+
+.readme, .project-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.project-img{
+  z-index: 1;
+}
 
 .project-tile{
   font-weight: bold;
@@ -43,8 +60,6 @@
   z-index: 2;
   display: block;
   text-align: center;
-  position: absolute;
-  top: 100%;
 }
 
 .readme{
@@ -56,29 +71,5 @@
 }
 
 
-.project-img{
-  z-index: 1;
-  display: block;
-}
 
-.project-link{
-  display: block;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
 
-.project-img, .readme{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-.project-img, .readme{
-  width: 100%;
-  height: 100%;
-}
-
-/*New comment*/
