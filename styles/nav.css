@@ -3,12 +3,37 @@
     width: 100%;
     z-index: 4;
   }
+
+  .toggle-btn{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    background-color: hsl(257, 64%, 25%);
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .toggle-btn.active::after{
+    content: "Hide Menu"
+  }
+
+  .toggle-btn:not(.active)::after{
+    content: "Show Menu"
+  }
+  .toggle-btn:hover{
+    background-color: hsl(257, 64%, 85%);
+    color: black;
+  }
+
   
-  #navbarlist{
+  .navbarlist{
       margin: 0;
       padding: 0;
   }
-  
+
   .navlistitem > a{
       display: block;
       text-align: center;

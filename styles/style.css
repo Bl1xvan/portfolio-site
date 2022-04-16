@@ -62,7 +62,7 @@ body{
     justify-content: end;
   
   }
-    #navbarlist{
+  .navbarlist{
       display: grid;
       grid-template-columns: auto auto auto;
       margin: 15px auto;
@@ -95,12 +95,28 @@ body{
         font-size: 2vw;
     }
 
+    .toggle-btn{
+      display: none;
+    }
   }
   
   @media screen and (max-width: 600px){
     #navbar{
     display: grid;
-    grid-gap: 10px;
+  }
+
+  .navlistitem{
+    background-color: var(--lightergreen);
+    border: 1px inset var(--darkgreen);
+  }
+
+  .navbarlist{
+    display: none;
+    width: 100%;
+  }
+
+  .navbarlist.active{
+    display: block;
   }
 
    a[href="#portfolio"]{
