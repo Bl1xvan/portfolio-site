@@ -58,28 +58,6 @@ body{
   
   @media screen and (min-width: 600px){
   
-    #navbar{
-    display: flex;
-    justify-content: end;
-  
-  }
-  .navbarlist{
-      display: grid;
-      grid-template-columns: auto auto auto;
-      margin: 15px auto;
-      width: 95%;
-      border-radius: 20px;
-      justify-content: end;
-      border-style: inset;
-      border-color: var(--darkgreen);
-      background-image: linear-gradient(var(--lightergreen), var(--lightgreen));
-    }
-    
-  .navlistitem > a[href="#myinfo-sect"]:hover{
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-  
     .header-letter{
       font-size: 7vw;
     }
@@ -96,32 +74,5 @@ body{
         font-size: 2vw;
     }
 
-    .toggle-btn{
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 600px){
-    #navbar{
-    display: grid;
-  }
 
-  .navlistitem{
-    background-color: var(--lightergreen);
-    border: 1px inset var(--darkgreen);
-  }
-
-  .navbarlist{
-    display: none;
-    width: 100%;
-  }
-
-  .navbarlist.active{
-    display: block;
-  }
-
-   a[href="#portfolio"]{
-      border-top: 1px solid var(--darklink);
-      border-bottom: 1px solid var(--darklink);
-    }
   }
