@@ -1,6 +1,7 @@
 @import url("ltrcolors.css");
 @import url("projects.css");
 @import url("nav.css");
+@import url("aboutme.css");
 
 body{
     margin: auto;
@@ -74,7 +75,7 @@ body{
       background-image: linear-gradient(var(--lightergreen), var(--lightgreen));
     }
     
-  .navlistitem > a[href="#profile"]:hover{
+  .navlistitem > a[href="#myinfo-sect"]:hover{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }

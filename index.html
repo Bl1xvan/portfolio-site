@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <nav id="navbar">
-              <a class="toggle-btn" href="#">
+              <button class="toggle-btn" type="button">
                 
-              </a>
+              </button>
           <ul class="navbarlist">
             <li class="navlistitem item-border">
               <a href="#welcome-section">
@@ -26,8 +27,8 @@
               </a>
             </li>
             <li class="navlistitem">
-              <a href="#profile">
-                Profile
+              <a href="#myinfo-sect">
+                About Me
               </a>
             </li>
           </ul>
@@ -93,26 +94,33 @@
               <div class="project-tile">Project Title</div>
             </a>
             </div>
-
-
-
             </div>
-      
-      
-            </div>
-
-
-
-
-          </div>
-          <div id="profile-sect">
-            <h3 class="section-header">And these are my socials</h3>
-            <div id="profile" class="grid-sect">
-              <div class="social"><a id="profile-link" href="https://github.com/Bl1xvan" target="_blank">Link 1</a></div>
-              <div class="social">Link 2</div>
-              <div class="social">Link 3</div>
             </div>
           </div>
+          <div id="myinfo-sect">
+            <div class="myinfo header">
+              <h2>About Me</h2>
+            </div>
+            <div class="myinfo images">
+              <div class="myface"><span id="img-cont"></span>    </div>
+              <ul class="mysocial">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-pinterest"></a></li>
+              </ul>
+            </div>
+            <div class="myinfo text">
+              <div class="mystory">
+                <h3 class="text-header">How I Started</h3>
+                <p class="text-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate sodales aliquet. Mauris non volutpat mauris. Phasellus ac tincidunt eros, a bibendum velit. Maecenas quis lobortis tortor.</p>
+            </div>
+            <div class="myexp">
+                <h3 class="text-header">What I Do</h3>
+                <p class="text-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate sodales aliquet. Mauris non volutpat mauris. Phasellus ac tincidunt eros, a bibendum velit. Maecenas quis lobortis tortor.</p>
+            </div>
+          </div>
+        </div>  
         </div>
     
 </body>
