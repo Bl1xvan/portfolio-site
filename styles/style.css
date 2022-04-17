@@ -8,6 +8,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
   }
 
+html{
+  scroll-behavior: smooth;
+}
 :root{
     --lightergreen: #85f9bf;
     --lightgreen: hsl(150, 80%, 50%);

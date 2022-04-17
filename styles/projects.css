@@ -10,7 +10,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
-    padding: 40px;
+    padding-bottom: 40px;
 }
   
 #projects::-webkit-scrollbar {
